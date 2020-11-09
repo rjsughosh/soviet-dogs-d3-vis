@@ -1,0 +1,101 @@
+* {
+  font-family: "green-old" !important;
+}
+
+@font-face {
+  font-family: "green-old";
+  src: url("./../assets/Greenscr.ttf");
+}
+
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+main {
+  background: url("./../images/bkg-space.gif");
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  height: 100vh;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.earth {
+  /* position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.earth-img {
+  height: 150px;
+  background: url("./../images/earth3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+svg {
+  height: 100vw;
+  width: 100vh;
+}
+.rocket-img {
+  cursor: pointer;
+}
+.dog1,
+.dog2 {
+  cursor: pointer;
+}
+
+.altitude-text {
+  color: #fff;
+  font-size: 12px;
+}
+
+.all-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 15rem;
+}
+.display-info {
+  margin: 1rem;
+  display: inline-block;
+  color: #4aff15 !important;
+  padding: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #999;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  max-width: 16rem;
+  width: 16rem;
+
+  min-height: 15rem;
+}
+.no-min {
+  min-height: 0rem;
+}
+.rotating {
+  position: fixed;
+  /* top: calc(50% - 100); */
+  top: 50;
+  left: 50%;
+}
+.rotating img {
+  height: 100px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>GapMinder</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <main class="">
+      <div class="earth">
+        <!-- <img class="earth-img" src="./images/earth3.png" /> -->
+        <svg id="map">
+          <use xlink:href="#one" />
+        </svg>
+        <div class="all-content">
+          <div class="no-min display-info">Soviet Space Dogs</div>
+          <div class="no-min display-info">
+            Choose year:
+            <select id="years">
+              <option value="1951">1951</option>
+              <option value="1954">1954</option>
+              <option value="1955">1955</option>
+              <option value="1956">1956</option>
+              <option value="1957">1957</option>
+              <option selected value="1958">1958</option>
+              <option value="1960">1960</option>
+              <option value="1961">1961</option>
+              <option value="1966">1966</option>
+            </select>
+          </div>
+          <div id="rocket-tooltip" class="display-info">Rocket details:</div>
+          <div id="dog-tooltip" class="display-info">Dog details:</div>
+        </div>
+        <!-- <div class="rotating"><img src="./images/roatating.gif" /></div> -->
+      </div>
+    </main>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
